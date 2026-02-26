@@ -597,3 +597,43 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* منوی کشویی */
+.menu {
+    position: relative;
+}
+
+.has-submenu {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    min-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 1000;
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+.submenu a:last-child {
+    border-bottom: none;
+}
+
+.submenu a:hover {
+    background: #f0f0f0;
+    color: #007aff;
+}
